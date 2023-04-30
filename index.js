@@ -14,7 +14,7 @@ arrKeyRus.forEach(element => {
     const el = element.toUpperCase();
     newArrKeyRu.push(el);
 });
-console.log(newArrKey);
+
 
 document.body.insertAdjacentHTML("afterend",renderKeyboard(arrKeyCode, arrKey));
 addButtons(arrKeyCode, arrKey, arrCode, arrKeyRus);
@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
     document.addEventListener('keydown', function(event) {
         let current = event.key;
-        // console.log(current);
         if( event.ctrlKey  && event.altKey) {
 
             if(lang.language === 'eu'){
@@ -65,13 +64,10 @@ document.addEventListener('DOMContentLoaded', ()=> {
         keyboardHandler(event, TEXT_AREA);
     });
 
-    document.querySelectorAll(".button").forEach(function (element) {       
-
-        element.addEventListener('click', (event) => {  
-            mouseHandler(event, TEXT_AREA);
+    document.addEventListener('click', (event) => {  
+        let current = event.target; 
+        console.log(current);
+        mouseHandler(event, TEXT_AREA);
             
-        });
-    });
-
-    
-})
+    });  
+});
