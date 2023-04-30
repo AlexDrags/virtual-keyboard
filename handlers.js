@@ -20,6 +20,9 @@ function keyboardHandler(event, TEXT_AREA) {
             return  TEXT_AREA.value += ` `;
         case 'Tab':
             return  TEXT_AREA.value += `    `;
+        case 'CapsLock':
+            return  TEXT_AREA.value += ``;
+            // return foo(newArr);
         case 'OS':
             return  TEXT_AREA.value += ``;
         case 'Alt':
@@ -54,6 +57,8 @@ function mouseHandler(event, TEXT_AREA) {
             return  TEXT_AREA.value += ` `;
         case 'Tab':
             return  TEXT_AREA.value += `    `;
+        case 'CapsLock':
+            return  TEXT_AREA.value += ``;
         case 'OS':
             return  TEXT_AREA.value += ``;
         case 'AltLeft':
