@@ -42,7 +42,7 @@ function keyboardHandler(event, TEXT_AREA) {
  * @returns значение или эффект нажатия текущей кнопки с мыши
  */
 function mouseHandler(event, TEXT_AREA) {
-    let capsLock = document.querySelector(`#keyboard .button[data-key="CapsLock"]`);
+    
     let current = event.target;
     current.classList.add("button--active");
     setTimeout(() => {
@@ -60,6 +60,7 @@ function mouseHandler(event, TEXT_AREA) {
             return  TEXT_AREA.value += `    `;
         case 'CapsLock':
             return  TEXT_AREA.value += ``;
+            // current.classList.toggle("big")
         case 'ControlLeft':
             return  TEXT_AREA.value += ``; 
         case 'ControlRight':
