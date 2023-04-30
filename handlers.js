@@ -22,8 +22,9 @@ function keyboardHandler(event, TEXT_AREA) {
             return  TEXT_AREA.value += `    `;
         case 'CapsLock':
             return  TEXT_AREA.value += ``;
-            // return foo(newArr);
         case 'OS':
+            return  TEXT_AREA.value += ``;
+        case 'Control':
             return  TEXT_AREA.value += ``;
         case 'Alt':
             return  TEXT_AREA.value += ``;
@@ -41,7 +42,7 @@ function keyboardHandler(event, TEXT_AREA) {
  * @returns значение или эффект нажатия текущей кнопки с мыши
  */
 function mouseHandler(event, TEXT_AREA) {
-
+    let capsLock = document.querySelector(`#keyboard .button[data-key="CapsLock"]`);
     let current = event.target;
     current.classList.add("button--active");
     setTimeout(() => {
@@ -59,15 +60,19 @@ function mouseHandler(event, TEXT_AREA) {
             return  TEXT_AREA.value += `    `;
         case 'CapsLock':
             return  TEXT_AREA.value += ``;
+        case 'ControlLeft':
+            return  TEXT_AREA.value += ``; 
+        case 'ControlRight':
+            return  TEXT_AREA.value += ``;           
         case 'OS':
             return  TEXT_AREA.value += ``;
         case 'AltLeft':
             return  TEXT_AREA.value += ``;
         case 'AltRight':
             return  TEXT_AREA.value += ``;
-        case 'LeftShift':
+        case 'ShiftLeft':
             return  TEXT_AREA.value += ``;
-        case 'RightShift':
+        case 'ShiftRight':
             return  TEXT_AREA.value += ``;
         default:
             TEXT_AREA.value += current.firstChild.data;
