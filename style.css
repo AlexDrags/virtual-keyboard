@@ -5,9 +5,7 @@
 
 .title {
     font-size: 30px;
-    color: rgba(43,89,149,.8);
-    -webkit-text-stroke: 1px rgba(114,177,101,.8);
-    -webkit-text-fill-color: rgba(101,134,177,.8);
+    color: rgba(23, 39, 60, 0.8);
 }
 
 .centralizer > p {
