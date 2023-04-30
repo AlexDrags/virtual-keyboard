@@ -264,4 +264,8 @@ export const arrCode = [
     "ArrowLeft",
     "ArrowDown",
     "ArrowRight"
-]
+];
+
+export let lang = {
+    language: 'eu',
+}
