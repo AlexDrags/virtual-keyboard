@@ -9,7 +9,7 @@ function renderKeyboard() {
     <textarea class="body--textarea textarea" id="textarea" rows="5" cols="50" value="1"></textarea>
     <div class="body--keyboard keyboard" id="keyboard"></div>
     <p class="description">Клавиатура создана в&nbsp;операционной системе Windows</p>
-    <p class="language">Для переключения языка комбинация: левыe ctrl + alt</p>
+    <p class="language">Для переключения языка комбинация: AltLeft + ShiftLeft</p>
     </div>
     `    
 };

@@ -5,11 +5,13 @@
  * @returns значение или эффект нажатия текущей кнопки с клавиатуры
  */
 function keyboardHandler(event, TEXT_AREA) {
-
+    
     document.querySelector(`#keyboard .button[data-key="${event.code}"]`).classList.add("button--active");
     setTimeout(() => {
         document.querySelector(`#keyboard .button[data-key="${event.code}"]`).classList.remove("button--active");
     }, 1000);
+
+    
 
     switch (event.key) {
         case 'Backspace':            
