@@ -32,6 +32,15 @@ function keyboardHandler(event, TEXT_AREA) {
             return  TEXT_AREA.value += ``;
         case 'Shift':
             return  TEXT_AREA.value += ``;
+        case 'ArrowUp':
+            return TEXT_AREA.value += `▲`;
+        case 'ArrowLeft':
+            return TEXT_AREA.value += `◄`;
+        case 'ArrowRight':
+            return TEXT_AREA.value += `►`;
+        case 'ArrowDown':
+            return TEXT_AREA.value += `▼`;
+            
         default:
             TEXT_AREA.value += event.key;
     };
@@ -62,7 +71,6 @@ function mouseHandler(event, TEXT_AREA) {
             return  TEXT_AREA.value += `    `;
         case 'CapsLock':
             return  TEXT_AREA.value += ``;
-            // current.classList.toggle("big")
         case 'ControlLeft':
             return  TEXT_AREA.value += ``; 
         case 'ControlRight':
@@ -76,7 +84,15 @@ function mouseHandler(event, TEXT_AREA) {
         case 'ShiftLeft':
             return  TEXT_AREA.value += ``;
         case 'ShiftRight':
-            return  TEXT_AREA.value += ``;
+            return  TEXT_AREA.value += ``;  
+        case 'ArrowUp':
+            return TEXT_AREA.value += `▲`;
+        case 'ArrowLeft':
+            return TEXT_AREA.value += `◄`;
+        case 'ArrowRight':
+            return TEXT_AREA.value += `►`;
+        case 'ArrowDown':
+            return TEXT_AREA.value += `▼`;      
         default:
             TEXT_AREA.value += current.firstChild.data;
     };
