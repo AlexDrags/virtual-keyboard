@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     document.addEventListener('keydown', function(event) {
         let current = event.key;
         let target = event.target;
-
+        console.log(current);
         if( event.shiftKey  && event.altKey) {
 
             if (lang.language === 'eu') {
